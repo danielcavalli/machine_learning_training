@@ -54,14 +54,16 @@ class Perceptron:
         for i in range(len(in_data)):
             correction = error * in_data[i] * self.learning_rate
             self.weights[i] += correction
-            
+#Here it adjusts the line to fit A in one side and B at the other
 def above_line(point, line_func):
     x, y = point
     if y > line_func(x):
         return 1
     else:
         return 0
-
+#Given a 100 random points it must fit them on the previous mentioned rule. 
+#Sometimes it is not possible, those are one of the cases where we can see that a more robust models would
+                                                                                          # learn to adapt
 points = np.random.randint(1, 100, (100,2))
 p = Perceptron(2)
 def lin1(x):
@@ -81,4 +83,4 @@ eve = no_waste_in_here()
 while eve["wrong"] > 0:
     eve = no_waste_in_here()
     
-    
+#Next: Making a network of neurons out of a Perceptron.
