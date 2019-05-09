@@ -1,4 +1,5 @@
 import numpy as np
+from itertools import chain
 #This represents a skeleton of a neuron. Here the algorithm knows only 
 #                how to tell apart a small set of values into weights.
 class This_is_a_neuron:
@@ -18,14 +19,14 @@ class This_is_a_neuron:
         weighted_sum = weighted_input.sum()
         return This_is_a_neuron.unit_step_function(weighted_sum)
 
-def no_waste_in_here():
+def call_01():
     #This is only here for the pourpose of not variable spamming the Variable Explorer in Spyder
     p = This_is_a_neuron(2,np.array([0.5,0.5]))
     for x in [np.array([0, 0]), np.array([0, 1]), 
           np.array([1, 0]), np.array([1, 1])]:
         y = p(np.array(x))
         print(x,y)
-no_waste_in_here()
+call_01()
 #In this Class the neuron learns to adapt itself to a given Dataset.
 #What this means is that it is capable of changin it's weights to better suit the pattern in the Data.
 from collections import Counter as C
@@ -61,14 +62,13 @@ def above_line(point, line_func):
         return 1
     else:
         return 0
-#Given a 100 random points it must fit them on the previous mentioned rule. 
-#Sometimes it is not possible, those are one of the cases where we can see that a more robust models would
-                                                                                          # learn to adapt
+#Given a 100 random points it must fit them on the previous mentioned rule. (It must pass thorough the 0,0 point)
+#Sometimes it is not possible using the current logic.
 points = np.random.randint(1, 100, (100,2))
 p = Perceptron(2)
 def lin1(x):
     return x + 4
-def no_waste_in_here():
+def call_02():
     for point in points:
         p.adjust(above_line(point,lin1),p(point),point)
     evaluation = C()
@@ -79,8 +79,25 @@ def no_waste_in_here():
             evaluation["wrong"] += 1
     print(evaluation.most_common())
     return evaluation
-eve = no_waste_in_here()
+eve = call_02()
 while eve["wrong"] > 0:
-    eve = no_waste_in_here()
+    eve = call_02()
     
-#Next: Making a network of neurons out of a Perceptron.
+#To solve the Origin Only problem some smart boys came with a smart solution: Bias variable. This is it:
+#WIP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
