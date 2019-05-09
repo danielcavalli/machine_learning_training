@@ -28,6 +28,7 @@ Here it goes, every site that I use to learn will end up here.
 
 ### Medium
 1. https://towardsdatascience.com/gentle-dive-into-math-behind-convolutional-neural-networks-79a07dd44cf9 (Convulutional Networks - Towards Data Science)
+2. https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492 (Flask Setup - Free Code Camp)
 
 ## Datasets
 (that I find nice)
