@@ -25,6 +25,7 @@ Here it goes, every site that I use to learn will end up here.
 7. https://www.youtube.com/watch?v=W2rWgXJBZhU&t=148s (Attetions in Neural Networks - CodeEmporium)
 8. https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv (Convulational Networks for VR - Stanford)
 9. https://www.youtube.com/watch?v=h7iBpEHGVNc&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=3 (Loss Function - Stanford)
+10. https://www.youtube.com/watch?v=JN6H4rQvwgY (Deep Learning - MIT)
 
 ### Medium
 1. https://towardsdatascience.com/gentle-dive-into-math-behind-convolutional-neural-networks-79a07dd44cf9 (Convulutional Networks - Towards Data Science)
