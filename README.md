@@ -32,6 +32,7 @@ Here it goes, every site that I use to learn will end up here.
 
 ### Collections
 1. https://deeplearning.mit.edu/ (MIT Collection Deeplearning of Classes)
+2. https://github.com/lexfridman/mit-deep-learning (MIT Collection of Deep Learning Classes - Git Repo)
 
 ## Datasets
 (that I find nice)
