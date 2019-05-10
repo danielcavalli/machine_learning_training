@@ -30,6 +30,9 @@ Here it goes, every site that I use to learn will end up here.
 1. https://towardsdatascience.com/gentle-dive-into-math-behind-convolutional-neural-networks-79a07dd44cf9 (Convulutional Networks - Towards Data Science)
 2. https://medium.freecodecamp.org/how-to-build-a-web-application-using-flask-and-deploy-it-to-the-cloud-3551c985e492 (Flask Setup - Free Code Camp)
 
+### Collections
+1. https://deeplearning.mit.edu/ (MIT Collection Deeplearning of Classes)
+
 ## Datasets
 (that I find nice)
 ### [MNIST](http://yann.lecun.com/exdb/mnist/)
