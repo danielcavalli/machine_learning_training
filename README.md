@@ -41,4 +41,4 @@ Here it goes, every site that I use to learn will end up here.
 ### [MNIST](http://yann.lecun.com/exdb/mnist/)
 70,000 images(20x20) of handwriten numbers. An awesome dataset with less than 10MB.
 ### [GOOGLE 1T](https://cogcomp.org/page/resource_view/69)
-A huge corpus with over 13,000,000 english words and over almost 1 Terabyte of data. Even though the size of the corpus is prohibitive to casual use, it is a fascinating dataset and should be here.
+A huge corpus with over 13,000,000 english words and almost 1 Terabyte of data. Even though the size of the corpus is prohibitive to casual use, it is a fascinating dataset and should be here.
