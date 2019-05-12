@@ -34,6 +34,7 @@ Here it goes, every site that I use to learn will end up here.
 ### Collections
 1. https://deeplearning.mit.edu/ (MIT Collection Deeplearning of Classes)
 2. https://github.com/lexfridman/mit-deep-learning (MIT Collection of Deep Learning Classes - Git Repo)
+3. https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/lecture-videos/index.htm (Statistics - MIT)
 
 ## Datasets
 (that I find nice)
