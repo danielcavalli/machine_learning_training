@@ -84,11 +84,70 @@ while eve["wrong"] > 0:
     eve = call_02()
     
 #To solve the Origin Only problem some smart boys came with a smart solution: Bias variable. This is it:
-#WIP
+from matplotlib import pyplot as plt
+%matplotlib inline
 
+def call_03():   
+    cls = [[], []]
+    for point in points:
+        cls[above_line(point, lin1)].append(tuple(point))
+    colours = ("r", "b")
+    for i in range(2):
+        X, Y = zip(*cls[i])
+        plt.scatter(X, Y, c=colours[i])
+        
+    X = np.arange(-3, 120)
+        
+    m = -p.weights[0] / p.weights[1]
+    print(m)
+    plt.plot(X, m*X, label="ANN line")
+    plt.plot(X, lin1(X), label="line1")
+    plt.legend()
+    plt.show()
+call_03()
 
+def call_04():
+    class1 = [(3, 4), (4.2, 5.3), (4, 3), (6, 5), (4, 6), (3.7, 5.8),
+              (3.2, 4.6), (5.2, 5.9), (5, 4), (7, 4), (3, 7), (4.3, 4.3) ] 
+    class2 = [(-3, -4), (-2, -3.5), (-1, -6), (-3, -4.3), (-4, -5.6), 
+              (-3.2, -4.8), (-2.3, -4.3), (-2.7, -2.6), (-1.5, -3.6), 
+              (-3.6, -5.6), (-4.5, -4.6), (3.7, 5.8) ]
+    def lin1(x):
+        return  x + 4
+    for point in class1:
+        p.adjust(1, 
+                 p(point), 
+                 point)
+    for point in class2:
+        p.adjust(0, 
+                 p(point), 
+                 point)
+        
+    evaluation = C()
+    for point in chain(class1, class2):
+        if p(point) == 1:
+            evaluation["correct"] += 1
+        else:
+            evaluation["wrong"] += 1
+            
+    testpoints = [(3.9, 6.9), (-2.9, -5.9)]
+    for point in testpoints:
+        print(p(point))
+            
+    print(evaluation.most_common())
+    X, Y = zip(*class1)
+    plt.scatter(X, Y, c="r")
+    X, Y = zip(*class2)
+    plt.scatter(X, Y, c="b")
+    x = np.arange(-7, 10)
+    y = 5*x + 10 
+    m = -p.weights[0] / p.weights[1]
+    plt.plot(x, m*x)
+    plt.show()
 
-
+for i in range(5):
+    p = Perceptron(2)
+    call_04()
 
 
 
